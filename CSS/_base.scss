@@ -1,0 +1,56 @@
+$primaryFont: arial;
+$secondaryFont: "open sans";
+$backgrounMain: #F4F3F2;
+$bgWithe: #ffffff;
+$textColor: #262222;
+$tagBackground: #E2E1DF;
+$textLabelColor: #6E6360;
+$outlineColor: #E2E1DF;
+$textRedColor: #831E19;
+
+%link {
+    font-size: .75rem;
+    text-decoration: none;
+    color: $textLabelColor;
+}
+
+@mixin flexbox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+@mixin desktop {
+    @media screen and (min-width:64rem){
+       @content
+    };
+}
+
+@mixin tablet {
+    @media screen and (min-width:48rem){
+       @content
+    };
+}
+
+.mesage-info {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    align-items: center;
+    justify-content: center;
+    background-color: $outlineColor;
+    gap: 16px;
+
+    h1 {
+        font-size: 24px;
+        color: $textColor;
+        font-weight: 800;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+
+    }
+
+}

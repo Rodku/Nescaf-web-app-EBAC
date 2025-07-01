@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/main.css">
+    <script src = "js/app.js" defer></script>
+    <title>Nescafé-esperimenta nuevos sabores</title>
+</head>
+<body>
+    <header>
+        <div class="user-container">
+            <img src="img/perfil-image.png" alt="use-photo">
+            <div class="user-info">
+                <h1>Jose Ku</h1>
+                <div class="acction-btn">
+                    <span><a href="#">Nivel: 1</a> </span>
+                    <span><a href="#">Energia</a></span>
+                    <img src="assets/Icons/arrow-rigth-icon.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <nav class="header__options">
+            <a href="#"><img src="assets/Icons/cart-icon.svg" alt="cart"></a>
+            <a href="#"><img src="assets/Icons/notification-icon.svg" alt="notificaton"></a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="menu__mobile" id="close__menu">
+
+            <div class="menu__contianer">
+
+                <nav class="header__options">
+                    <div>
+                        <a href="#"><img src="assets/Icons/large-arrow-left-icon.svg" alt="cart" class="circular__button" id="close__menu-arrow"></a>
+                        <p>Mi perfil</p>
+                    </div>
+                    <a href="#"><img src="assets/Icons/notification-icon.svg" alt="notificaton" class="circular__button"></a>
+                </nav>
+
+                <div class="user-container">
+                    <img src="img/perfil-image.png" alt="use-photo">
+                    
+                    <div class="user-info">
+                        <h1>Jose Ku</h1>
+                        <div class="acction-btn">
+                            <span><a href="#">Nivel: 1</a> </span>
+                            <span><a href="#">Energia</a></span>
+                            <img src="assets/Icons/arrow-rigth-icon.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="navigation__list" role="list">
+                    <li><img src="assets/Icons/user-icon.svg" alt="">Datos cuenta</li>
+                    <li><img src="assets/Icons/tag-icon.svg" alt="">Promociones</li>
+                    <li><img src="assets/Icons/coupon-icon.svg" alt="">Cupones</li>
+                    <li><img src="assets/Icons/award-icon.svg" alt="">Puntos obtenidos</li>
+                    <li><img src="assets/Icons/large-arrow-left-red-icon.svg" alt="">Cerrar sesión</li>
+                </ul>
+ 
+            </div>
+
+        </section>
+        
+        <form class="Searcher">
+            <input type="search" placeholder="¿Buscas algo en especifico?" id="imput__search" role="searcher" aria-label="search-types-of-coffe">
+            <img src="assets/Icons/search-icon.svg" class="icon__search">
+            <img src="assets/Icons/close-small-icon.svg" class="icon__close">
+            
+        </form>
+
+        <div class="modal__results" id="modal__results">
+
+            <div class="result__container">
+
+                <nav class="header__options">
+                    <div>
+                        <a href="#"><img src="assets/Icons/large-arrow-left-icon.svg" alt="cart" class="circular__button" id="close__modal"></a>
+                        <p>Buscar</p>
+                    </div>
+                    <a href="#"><img src="assets/Icons/cart-icon.svg" alt="notificaton" class="circular__button"></a>
+                </nav>
+
+                <form class="Searcher__comp">
+                    <input type="search" placeholder="¿Buscas algo en especifico?">
+                    <img src="assets/Icons/search-icon.svg" class="icon__search">
+                    <img src="assets/Icons/close-small-icon.svg" class="icon__close" id="close__results">
+                </form>
+                
+                <ul class="results" role="list">
+
+                    <li><img src="assets/Icons/search-black-icon.svg" alt="">Nescafé clásico</li>
+                    <li>
+                        <img src="assets/Icons/search-black-icon.svg" alt="">
+                        <div>
+                            <p>Nescafé clásico</p>
+                            <span>Café de olla</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="assets/Icons/search-black-icon.svg" alt="">
+                        <div>
+                            <p>Nescafé clásico</p>
+                            <span>Black</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="assets/Icons/search-black-icon.svg" alt="">
+                        <div>
+                            <p>Nescafé clásico</p>
+                            <span>Ice</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="assets/Icons/search-black-icon.svg" alt="">
+                        <div>
+                            <p>Nescafé clásico</p>
+                            <span>Dolca</span>
+                        </div>
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+        </div>
+
+        <section class="coffe__group" role="grid">
+            <div class="coffe__card">
+                <img src="assets/svg/6562927_negro.svg" alt="Café negro">
+                <p>Café negro</p>
+            </div class="coffes">
+
+            <div class="coffe__card">
+                <img src="assets/svg/6562927_lungo.svg" alt="Lungo">
+                <p>Lungo</p>
+            </div class="coffes">
+
+            <div class="coffe__card">
+                <img src="assets/svg/6562927_latte.svg" alt="Latte">
+                <p>Latte</p>
+            </div>
+
+            <div class="coffe__card">
+                <img src="assets/svg/6562927_expresso.svg" alt="Expresso">
+                <p>Expresso</p>
+            </div>
+
+            <div class="coffe__card">
+                <img src="assets/svg/6562927_espumoso.svg" alt="Espumoso">
+                <p>Espumoso</p>
+            </div>
+
+            <div class="coffe__card">
+                <img src="assets/svg/6562927_capuccino.svg" alt="Cappuccino">
+                <p>Cappuccino</p>
+            </div>
+
+            <div class="coffe__card">
+                <img src="assets/svg/6562927_americano.svg" alt="Americano">
+                <p>Americano</p>
+            </div>
+
+        </section>
+
+        <section class="banner__coffe" role="presentation">
+            <img src="img/coffe-icon-scan-image.jpg" alt="frasco-de-nescafe">
+            <div class="banner__product">
+                <p class="banner__title">Te gustaría probar una receta.</p>
+                <p class="banner__text">La comunidad de Nescafé comparte su propias recetas.</p>
+                <button class="banner__btn">Escanear ahora</button>
+            </div>
+        </section>
+
+        <section class="cards__coffe">
+            <h2 class="cards__title">Nuestros cafés</h2>
+
+            <div class="cards__gorup--main">
+                <div class="cards__group">
+                    
+                    <div class="card__single">
+                        <img src="img/todos-nuestros-cafes-icon-image.jpg" alt="granos-de-cafe">
+                        <p class="tile__card">Todos nuestros tipos de café</p>
+                        
+                    </div>
+
+                    <div class="card__single">
+                        <img src="img/nescafe-clasico-image.jpg" alt="frasco-de-nescafe-clasico">
+                        <p class="tile__card">Nescafé</p>
+                        <p class="text__card">Clásico</p>
+
+                        <div class="tag__single tag__single--recomendado">
+                            <img src="assets/Icons/star-icon.svg" alt="">
+                            <p>Recomendado </p>
+                        </div>
+                    </div>
+
+                    <div class="card__single">
+                        <img src="img/nescafe-capuchino-image.jpg" alt="frasco-de-nescafe-para-capuccino">
+                        <p class="tile__card">Nescafé</p>
+                        <p class="text__card">Cappuccino</p>
+
+                        <div class="tag__single tag__single--destacado">
+                            <img src="assets/Icons/star-icon.svg" alt="">
+                            <p>Destacado por usuarios</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        
+        </section>
+
+        <nav class="nav__bar" role="navigation">
+            <div class="nav__item nav__item--home">
+            <img src="assets/Icons/home-icon.svg" alt="">
+            <p>Inicio</p>
+            </div>
+
+            <div class="nav__item nav__item--heart">
+                <img src="assets/Icons/heart-icon.svg" alt="">
+                <p>Favoritos</p>
+            </div>
+
+            <div class="nav__item nav__item--scan">
+                <img src="assets/Icons/scan-icon.svg" alt="">
+                <p>Escaneo</p>
+            </div>
+
+            <div class="nav__item nav__item--qr">
+                <img src="assets/Icons/scan-qr-icon.svg" alt="">
+                <p>Recetas</p>
+            </div>
+
+            <div class="nav__item nav__item--user" id="menu__options">
+                <img src="assets/Icons/perfil-icon.svg" alt="">
+                <p>Perfil</p>
+            </div>
+        </nav>
+
+    </main>
+
+    
+
+</body>
+</html>
