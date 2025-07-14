@@ -1,5 +1,5 @@
 function checkResolution() {
-if(window.innerWidth > 376) {
+if(window.innerWidth > 600) {
     document.body.innerHTML = `<div class="mesage-info">` + 
     `<h1>Esta aplicacion solo esta disponible para dispositives movile</h1>` + 
     `<p>Por favor, accede desde un dispositivo movil para utilizar esta aplicacion</p>` + 
