@@ -165,9 +165,12 @@
                 border-radius: 1rem;
                 box-sizing: border-box;
 
-                a {
-                    @extend %link;
+                span {
+
+                    a {
+                        @extend %link;
                     
+                    }
                 }
 
                 img {

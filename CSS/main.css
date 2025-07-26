@@ -1,7 +1,7 @@
-.user-container .user-info .acction-btn a {
+.user-container .user-info .acction-btn span a {
   font-size: 0.75rem;
   text-decoration: none;
-  color: #6E6360;
+  color: #262222;
 }
 
 .mesage-info {
