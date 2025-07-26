@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CSS/main.css">
-    <meta name="description" content="Descubre el sabor, aroma y disfruta cada taza como nunca antes.¡Tu momento empieza aquí!">
+    <meta name="description" content="Descubre el sabor, aroma y disfruta cada taza como nunca antes. ¡Tu momento empieza aquí!">
     <meta name="robots" content="index, follow">
     <meta name="keywords" content="café instantáneo, café soluble, recetas de café, cápsulas de café, preparar café, café Nescafé, café para despertar, café fácil, café en casa">
     <meta property="og:title" content="Nescafé App- Esperimenta nuevos sabores">
@@ -20,7 +20,7 @@
 <body>
     <header>
         <div class="user-container">
-            <img src="img/perfil-image.png" alt="use-photo">
+            <img src="img/perfil-image.png" alt="user-photo">
             <div class="user-info">
                 <h1>Jose Ku</h1>
                 <div class="acction-btn">
@@ -30,9 +30,9 @@
                 </div>
             </div>
         </div>
-        <nav class="header__options">
-            <a href="#"><img src="assets/Icons/cart-icon.svg" alt="cart"></a>
-            <a href="#"><img src="assets/Icons/notification-icon.svg" alt="notificaton"></a>
+        <nav class="header__options" role="navigation">
+            <a href="#" role="link" aria-label="you shopping cart"><img src="assets/Icons/cart-icon.svg" alt=""></a>
+            <a href="#" role="link" aria-label="notifications"><img src="assets/Icons/notification-icon.svg" alt=""></a>
         </nav>
     </header>
 
@@ -44,14 +44,14 @@
 
                 <nav class="header__options">
                     <div>
-                        <a href="#" rel="noopener" aria-label="close menu"><img src="assets/Icons/large-arrow-left-icon.svg" alt="cart" class="circular__button" id="close__menu-arrow"></a>
+                        <a href="#" rel="noopener" aria-label="close menu"><img src="assets/Icons/large-arrow-left-icon.svg" alt="" class="circular__button" id="close__menu-arrow"></a>
                         <p>Mi perfil</p>
                     </div>
-                    <a href="#" rel="noopener" aria-label="see notifications"><img src="assets/Icons/notification-icon.svg" alt="notificaton" class="circular__button"></a>
+                    <a href="#" rel="noopener" aria-label="see notifications"><img src="assets/Icons/notification-icon.svg" alt="" class="circular__button"></a>
                 </nav>
 
                 <div class="user-container">
-                    <img src="img/perfil-image.png" alt="use-photo">
+                    <img src="img/perfil-image.png" alt="user-photo">
                     
                     <div class="user-info">
                         <h1>Jose Ku</h1>
@@ -63,7 +63,7 @@
                     </div>
                 </div>
 
-                <ul class="navigation__list" role="list">
+                <ul class="navigation__list" role="navigation">
                     <li><img src="assets/Icons/user-icon.svg" alt="">Datos cuenta</li>
                     <li><img src="assets/Icons/tag-icon.svg" alt="">Promociones</li>
                     <li><img src="assets/Icons/coupon-icon.svg" alt="">Cupones</li>
@@ -75,9 +75,9 @@
 
         </section>
         
-        <form class="Searcher">
+        <form class="Searcher" role="search" aria-label="search-types-of-coffe">
             <label for="imput__search" class="label__text">¿Qué sabor te va a conquistar hoy?</label>
-            <input type="search" placeholder="¿Buscas algo en especifico?" id="imput__search" role="search" aria-label="search-types-of-coffe">
+            <input type="search" placeholder="¿Buscas algo en especifico?" id="imput__search">
             <img src="assets/Icons/search-icon.svg" class="icon__search" loading="lazy">
             <img src="assets/Icons/close-small-icon.svg" class="icon__close" loading="lazy">
             
@@ -255,7 +255,7 @@
             </article>
 
             <article class="nav__item nav__item--user" id="menu__options" role="link" aria-label="Perfil">
-                <img src="assets/Icons/perfil-icon.svg" alt="perfil-icon" loading="lazy">
+                <img src="assets/Icons/perfil-icon.svg" alt="" loading="lazy">
                 <p>Perfil</p>
             </article>
         </nav>
