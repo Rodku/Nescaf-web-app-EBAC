@@ -8,9 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CSS/main.css">
-     <meta name="description" content="Disfruta los mejores cafés con un frasco de Nescafé">
+    <meta name="description" content="Descubre el sabor, aroma y disfruta cada taza como nunca antes.¡Tu momento empieza aquí!">
     <meta name="robots" content="index, follow">
-    <meta name="keywords" content="deleite, café, sabores, granos de café, mejor sabor">
+    <meta name="keywords" content="café instantáneo, café soluble, recetas de café, cápsulas de café, preparar café, café Nescafé, café para despertar, café fácil, café en casa">
     <meta property="og:title" content="Nescafé App- Esperimenta nuevos sabores">
     <meta property="og:description" content="El mejor sabor para el hogar, deleitate con el mejor grano de café">
     <meta property="og:image" content="img/miniatura-link.webp">
@@ -44,10 +44,10 @@
 
                 <nav class="header__options">
                     <div>
-                        <a href="#" rel="noopener"><img src="assets/Icons/large-arrow-left-icon.svg" alt="cart" class="circular__button" id="close__menu-arrow"></a>
+                        <a href="#" rel="noopener" aria-label="close menu"><img src="assets/Icons/large-arrow-left-icon.svg" alt="cart" class="circular__button" id="close__menu-arrow"></a>
                         <p>Mi perfil</p>
                     </div>
-                    <a href="#" rel="noopener"><img src="assets/Icons/notification-icon.svg" alt="notificaton" class="circular__button"></a>
+                    <a href="#" rel="noopener" aria-label="see notifications"><img src="assets/Icons/notification-icon.svg" alt="notificaton" class="circular__button"></a>
                 </nav>
 
                 <div class="user-container">
@@ -76,7 +76,8 @@
         </section>
         
         <form class="Searcher">
-            <input type="search" placeholder="¿Buscas algo en especifico?" id="imput__search" role="searcher" aria-label="search-types-of-coffe">
+            <label for="imput__search" class="label__text">¿Qué sabor te va a conquistar hoy?</label>
+            <input type="search" placeholder="¿Buscas algo en especifico?" id="imput__search" role="search" aria-label="search-types-of-coffe">
             <img src="assets/Icons/search-icon.svg" class="icon__search" loading="lazy">
             <img src="assets/Icons/close-small-icon.svg" class="icon__close" loading="lazy">
             
@@ -88,23 +89,23 @@
 
                 <nav class="header__options">
                     <div>
-                        <a href="#" rel="noopener"><img src="assets/Icons/large-arrow-left-icon.svg" alt="cart" class="circular__button" id="close__modal" loading="lazy"></a>
+                        <a href="#" rel="noopener"><img src="assets/Icons/large-arrow-left-icon.svg" alt="" class="circular__button" id="close__modal" loading="lazy"></a>
                         <p>Buscar</p>
                     </div>
-                    <a href="#" rel="noopener"><img src="assets/Icons/cart-icon.svg" alt="notificaton" class="circular__button" loading="lazy"></a>
+                    <a href="#" rel="noopener"><img src="assets/Icons/cart-icon.svg" alt="" class="circular__button" loading="lazy"></a>
                 </nav>
 
                 <form class="Searcher__comp">
-                    <input type="search" placeholder="¿Buscas algo en especifico?">
-                    <img src="assets/Icons/search-icon.svg" class="icon__search" loading="lazy">
-                    <img src="assets/Icons/close-small-icon.svg" class="icon__close" id="close__results" loading="lazy">
+                    <input type="search" placeholder="¿Buscas algo en especifico?" role="search">
+                    <img src="assets/Icons/search-icon.svg" class="icon__search" loading="lazy" aria-label="search">
+                    <img src="assets/Icons/close-small-icon.svg" class="icon__close" id="close__results" loading="lazy" aria-label="close">
                 </form>
                 
                 <ul class="results" role="list">
 
-                    <li><img src="assets/Icons/search-black-icon.svg" alt="search-black-icon" loading="lazy">Nescafé clásico</li>
+                    <li><img src="assets/Icons/search-black-icon.svg" alt="" loading="lazy">Nescafé clásico</li>
                     <li>
-                        <img src="assets/Icons/search-black-icon.svg" alt="search-black-icon" loading="lazy">
+                        <img src="assets/Icons/search-black-icon.svg" alt="" loading="lazy">
                         <div>
                             <p>Nescafé clásico</p>
                             <span>Café de olla</span>
@@ -112,7 +113,7 @@
                     </li>
 
                     <li>
-                        <img src="assets/Icons/search-black-icon.svg" alt="search-black-icon" loading="lazy">
+                        <img src="assets/Icons/search-black-icon.svg" alt="" loading="lazy">
                         <div>
                             <p>Nescafé clásico</p>
                             <span>Black</span>
@@ -120,7 +121,7 @@
                     </li>
 
                     <li>
-                        <img src="assets/Icons/search-black-icon.svg" alt="search-black-icon" loading="lazy">
+                        <img src="assets/Icons/search-black-icon.svg" alt="" loading="lazy">
                         <div>
                             <p>Nescafé clásico</p>
                             <span>Ice</span>
@@ -128,7 +129,7 @@
                     </li>
 
                     <li>
-                        <img src="assets/Icons/search-black-icon.svg" alt="search-black-icon" loading="lazy">
+                        <img src="assets/Icons/search-black-icon.svg" alt="" loading="lazy">
                         <div>
                             <p>Nescafé clásico</p>
                             <span>Dolca</span>
@@ -143,40 +144,41 @@
         </div>
 
         <section class="coffe__group" role="grid">
-            <div class="coffe__card">
+
+            <article class="coffe__card">
                 <img src="assets/svg/6562927_negro.svg" alt="Café negro" loading="lazy">
                 <p>Café negro</p>
-            </div class="coffes">
+            </article>
 
-            <div class="coffe__card">
+            <article class="coffe__card">
                 <img src="assets/svg/6562927_lungo.svg" alt="Lungo" loading="lazy">
                 <p>Lungo</p>
-            </div class="coffes">
+            </article>
 
-            <div class="coffe__card">
+            <article class="coffe__card">
                 <img src="assets/svg/6562927_latte.svg" alt="Latte" loading="lazy">
                 <p>Latte</p>
-            </div>
+            </article>
 
-            <div class="coffe__card">
+            <article class="coffe__card">
                 <img src="assets/svg/6562927_expresso.svg" alt="Expresso" loading="lazy">
                 <p>Expresso</p>
-            </div>
+            </article>
 
-            <div class="coffe__card">
+            <article class="coffe__card">
                 <img src="assets/svg/6562927_espumoso.svg" alt="Espumoso" loading="lazy">
                 <p>Espumoso</p>
-            </div>
+            </article>
 
-            <div class="coffe__card">
+            <article class="coffe__card">
                 <img src="assets/svg/6562927_capuccino.svg" alt="Cappuccino" loading="lazy">
                 <p>Cappuccino</p>
-            </div>
+            </article>
 
-            <div class="coffe__card">
+            <article class="coffe__card">
                 <img src="assets/svg/6562927_americano.svg" alt="Americano" loading="lazy">
                 <p>Americano</p>
-            </div>
+            </article>
 
         </section>
 
@@ -193,15 +195,16 @@
             <h2 class="cards__title">Nuestros cafés</h2>
 
             <div class="cards__gorup--main">
+
                 <div class="cards__group">
                     
-                    <div class="card__single">
+                    <article class="card__single">
                         <img src="img/todos-nuestros-cafes-icon-image.jpg" alt="granos-de-cafe" loading="lazy">
                         <p class="tile__card">Todos nuestros tipos de café</p>
                         
-                    </div>
+                    </article>
 
-                    <div class="card__single">
+                    <article class="card__single">
                         <img src="img/nescafe-clasico-image.jpg" alt="frasco-de-nescafe-clasico" loading="lazy">
                         <p class="tile__card">Nescafé</p>
                         <p class="text__card">Clásico</p>
@@ -210,9 +213,9 @@
                             <img src="assets/Icons/star-icon.svg" alt="star-icon" loading="lazy">
                             <p>Recomendado </p>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="card__single">
+                    <article class="card__single">
                         <img src="img/nescafe-capuchino-image.jpg" alt="frasco-de-nescafe-para-capuccino" loading="lazy">
                         <p class="tile__card">Nescafé</p>
                         <p class="text__card">Cappuccino</p>
@@ -221,7 +224,7 @@
                             <img src="assets/Icons/star-icon.svg" alt="">
                             <p>Destacado por usuarios</p>
                         </div>
-                    </div>
+                    </article>
 
                 </div>
 
@@ -230,30 +233,31 @@
         </section>
 
         <nav class="nav__bar" role="navigation">
-            <div class="nav__item nav__item--home">
-            <img src="assets/Icons/home-icon.svg" alt="home-icon" loading="lazy">
-            <p>Inicio</p>
-            </div>
 
-            <div class="nav__item nav__item--heart">
-                <img src="assets/Icons/heart-icon.svg" alt="heart-icon" loading="lazy">
+            <article class="nav__item nav__item--home" role="link" aria-label="Inicio">
+                <img src="assets/Icons/home-icon.svg" alt="" loading="lazy">
+                <p>Inicio</p>
+            </article>
+
+            <article class="nav__item nav__item--heart" role="link" aria-label="Favoritos">
+                <img src="assets/Icons/heart-icon.svg" alt="" loading="lazy">
                 <p>Favoritos</p>
-            </div>
+            </article>
 
-            <div class="nav__item nav__item--scan">
-                <img src="assets/Icons/scan-icon.svg" alt="scan-icon" loading="lazy">
+            <article class="nav__item nav__item--scan" role="link" aria-label="Escaneo">
+                <img src="assets/Icons/scan-icon.svg" alt="" loading="lazy">
                 <p>Escaneo</p>
-            </div>
+            </article>
 
-            <div class="nav__item nav__item--qr">
-                <img src="assets/Icons/scan-qr-icon.svg" alt="scan-qr-icon" loading="lazy">
+            <article class="nav__item nav__item--qr" role="link" aria-label="Recetas">
+                <img src="assets/Icons/scan-qr-icon.svg" alt="" loading="lazy">
                 <p>Recetas</p>
-            </div>
+            </article>
 
-            <div class="nav__item nav__item--user" id="menu__options">
+            <article class="nav__item nav__item--user" id="menu__options" role="link" aria-label="Perfil">
                 <img src="assets/Icons/perfil-icon.svg" alt="perfil-icon" loading="lazy">
                 <p>Perfil</p>
-            </div>
+            </article>
         </nav>
 
     </main>

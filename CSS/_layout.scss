@@ -182,7 +182,15 @@ main {
         position: relative;
         z-index: 0;
 
-        input {      
+        label {
+            font-size: 14px;
+            color: $textColor;
+            margin-bottom: 16px;
+            font-weight: 600;
+            
+        }
+        input {
+            margin-top: 16px;      
             width: 100%;
             padding: 16px 48px 16px 44px;
             border: 1px solid $outlineColor;
@@ -190,24 +198,24 @@ main {
 
             @include tablet {
                 width: 32rem;
-        }
+            }
 
             @include desktop {
                 width: 32rem;
-        }
+            }
         }
 
         .icon__search {
             position: absolute;
             left: 34px;
-            top: 12px;
+            top: 44px;
             
         }
 
         .icon__close{
             position: absolute;
             right: 34px;
-            top: 12px;
+            top: 44px;
             display: none;
 
             &::after {

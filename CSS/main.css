@@ -182,7 +182,14 @@ main .Searcher {
   position: relative;
   z-index: 0;
 }
+main .Searcher label {
+  font-size: 14px;
+  color: #262222;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
 main .Searcher input {
+  margin-top: 16px;
   width: 100%;
   padding: 16px 48px 16px 44px;
   border: 1px solid #E2E1DF;
@@ -201,12 +208,12 @@ main .Searcher input {
 main .Searcher .icon__search {
   position: absolute;
   left: 34px;
-  top: 12px;
+  top: 44px;
 }
 main .Searcher .icon__close {
   position: absolute;
   right: 34px;
-  top: 12px;
+  top: 44px;
   display: none;
 }
 main .Searcher .icon__close::after {
